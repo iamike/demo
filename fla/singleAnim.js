@@ -8,33 +8,7 @@ lib.properties = {
 	height: 1078,
 	fps: 16,
 	color: "#FFFFFF",
-	manifest: [
-		{src:"imagesSingle/a12.png", id:"a12"},
-		{src:"imagesSingle/b10.png", id:"b10"},
-		{src:"imagesSingle/b11.png", id:"b11"},
-		{src:"imagesSingle/b12.png", id:"b12"},
-		{src:"imagesSingle/b13.png", id:"b13"},
-		{src:"imagesSingle/b14.png", id:"b14"},
-		{src:"imagesSingle/b15.png", id:"b15"},
-		{src:"imagesSingle/b16.png", id:"b16"},
-		{src:"imagesSingle/b17.png", id:"b17"},
-		{src:"imagesSingle/b3.png", id:"b3"},
-		{src:"imagesSingle/b4.png", id:"b4"},
-		{src:"imagesSingle/b5.png", id:"b5"},
-		{src:"imagesSingle/b6.jpg", id:"b6"},
-		{src:"imagesSingle/b7.png", id:"b7"},
-		{src:"imagesSingle/b8.png", id:"b8"},
-		{src:"imagesSingle/b9.png", id:"b9"},
-		{src:"imagesSingle/bg_sence.jpg", id:"bg_sence"},
-		{src:"imagesSingle/heading4.png", id:"heading4"},
-		{src:"imagesSingle/heading5.png", id:"heading5"},
-		{src:"imagesSingle/result.png", id:"result"},
-		{src:"imagesSingle/reward1.png", id:"reward1"},
-		{src:"imagesSingle/reward2.png", id:"reward2"},
-		{src:"imagesSingle/reward3.png", id:"reward3"},
-		{src:"imagesSingle/s1.png", id:"s1"},
-		{src:"imagesSingle/swipeHint.png", id:"swipeHint"}
-	]
+	manifest: []
 };
 
 
@@ -44,153 +18,178 @@ lib.properties = {
 
 
 (lib.a12 = function() {
-	this.initialize(img.a12);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,100,51);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b10 = function() {
-	this.initialize(img.b10);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,200,128);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b11 = function() {
-	this.initialize(img.b11);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,200,150);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b12 = function() {
-	this.initialize(img.b12);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,100,69);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b13 = function() {
-	this.initialize(img.b13);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,98,92);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b14 = function() {
-	this.initialize(img.b14);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,65,56);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b15 = function() {
-	this.initialize(img.b15);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,280,47);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b16 = function() {
-	this.initialize(img.b16);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,280,49);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b17 = function() {
-	this.initialize(img.b17);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,528,88);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b3 = function() {
-	this.initialize(img.b3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,210,239);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b4 = function() {
-	this.initialize(img.b4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,111,95);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b5 = function() {
-	this.initialize(img.b5);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,300,373);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b6 = function() {
-	this.initialize(img.b6);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,237,400);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b7 = function() {
-	this.initialize(img.b7);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,200,248);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b8 = function() {
-	this.initialize(img.b8);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,100,76);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.b9 = function() {
-	this.initialize(img.b9);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,100,56);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.bg_sence = function() {
-	this.initialize(img.bg_sence);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.heading4 = function() {
-	this.initialize(img.heading4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,58);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.heading5 = function() {
-	this.initialize(img.heading5);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,410,58);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.result = function() {
-	this.initialize(img.result);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.reward1 = function() {
-	this.initialize(img.reward1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,468,258);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.reward2 = function() {
-	this.initialize(img.reward2);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,468,258);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(21);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.reward3 = function() {
-	this.initialize(img.reward3);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,245,254);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(22);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.s1 = function() {
-	this.initialize(img.s1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,305,332);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(23);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.swipeHint = function() {
-	this.initialize(img.swipeHint);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,405,447);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(24);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.Tween1 = function() {

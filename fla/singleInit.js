@@ -9,7 +9,7 @@ function init() {
     loader.addEventListener("fileload", handleFileLoad);
     loader.addEventListener("complete", handleComplete);
     loader.addEventListener("progress", handleProgress);
-    //loader.loadFile({src:"fla/images/singleAnim_atlas_.json", type:"spritesheet", id:"singleAnim_atlas_"}, true);
+    loader.loadFile({src:"fla/images/singleAnim_atlas_.json", type:"spritesheet", id:"singleAnim_atlas_"}, true);
 
 
     loader.loadManifest(lib.properties.manifest);
@@ -23,7 +23,7 @@ function handleFileLoad(evt) {
 
 function handleComplete(evt) {
     var queue = evt.target;
-    //ss["singleAnim_atlas_"] = queue.getResult("singleAnim_atlas_");
+    ss["singleAnim_atlas_"] = queue.getResult("singleAnim_atlas_");
 
     exportRoot = new lib.singleAnim();
 
