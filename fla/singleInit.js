@@ -9,7 +9,7 @@ function init() {
     loader.addEventListener("fileload", handleFileLoad);
     loader.addEventListener("complete", handleComplete);
     loader.addEventListener("progress", handleProgress);
-    loader.loadFile({src:"fla/images/singleAnim_atlas_.json", type:"spritesheet", id:"singleAnim_atlas_"}, true);
+    loader.loadFile({src:"imagesSingle/singleAnim_atlas_.json", type:"spritesheet", id:"singleAnim_atlas_"}, true);
 
 
     loader.loadManifest(lib.properties.manifest);
