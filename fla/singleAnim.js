@@ -806,7 +806,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	this.frame_20 = function() {
 		exportRoot.jx =  new juiceMix();
 		exportRoot.jx.x = 320;
-		exportRoot.jx.y = 520;
+		exportRoot.jx.y = 545;
 		stage.addChild(exportRoot.jx);
 	}
 	this.frame_41 = function() {
