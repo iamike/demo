@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="fla/libs/easeljs-0.8.1.min.js"></script>
+    <script src="fla/libs/tweenjs-0.6.1.min.js"></script>
+    <script src="fla/libs/movieclip-0.8.1.min.js"></script>
+    <script src="fla/libs/preloadjs-0.6.1.min.js"></script>
+    <script src="js/libs/jquery.transit.js"></script>
+    <!--<script src="js/libs/TweenMax.min.js"></script>-->
+    <script src="js/libs/lodash.min.js"></script>
+    <script src="js/libs/jquery.touchSwipe.min.js"></script>
+    <script src="fla/canvasAnimNew.js"></script>
+    <script type="text/javascript">
+    var canvas, stage, exportRoot;
+
+    function init() {
+        canvas = document.getElementById("canvas");
+        images = images || {};
+        ss = ss || {};
+
+        var loader = new createjs.LoadQueue(false);
+        loader.addEventListener("fileload", handleFileLoad);
+        loader.addEventListener("complete", handleComplete);
+        loader.addEventListener("progress", handleProgress);
+        //loader.loadFile({src:"fla/images/canvasAnim_atlas_.json", type:"spritesheet", id:"canvasAnim_atlas_"}, true);
+
+
+        loader.loadManifest(lib.properties.manifest);
+    }
+
+    function handleFileLoad(evt) {
+        if (evt.item.type == "image") {
+            images[evt.item.id] = evt.result;
+        }
+    }
+
+    function handleComplete(evt) {
+        var queue = evt.target;
+        // ss["canvasAnim_atlas_"] = queue.getResult("canvasAnim_atlas_");
+
+        exportRoot = new lib.canvasAnimNew();
+
+        stage = new createjs.Stage(canvas);
+        stage.addChild(exportRoot);
+        stage.update();
+
+        createjs.Ticker.setFPS(lib.properties.fps);
+        createjs.Ticker.addEventListener("tick", stage);
+
+
+
+        //hide progress
+        $('#loadBody').hide();
+
+    }
+
+    function handleProgress(evt) {
+        var loaded = Math.floor(evt.loaded * 100);
+        $(".progress").text(loaded + "%");
+
+    }
+    </script>
+    <style>
+    /* Removes Mobile Highlight */
+    
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="site-body">
+        <div id="minisite">
+            <img id="brand" src="imageAssets/brand.png" width="120" height="66" />
+            <!-- bigBgBody start -->
+            <div id="openning" class="big-bg-body">
+                <canvas id="canvas" width="640" height="1078"></canvas>
+            </div>
+            <!-- bigBgBody end -->
+            <!-- loadBody start -->
+            <div id="loadBody" class="load-body">
+                <div class="load-watch-main">
+                    <img src="imageAssets/loading.gif" width="61" height="52">
+                    <div class="progress">0%</div>
+                </div>
+            </div>
+            <!-- loadBody end -->
+            <div id="start"></div>
+            <div id="modeSelector">
+                <a href="single.html"><img id="single" src="imageAssets/single.png" width="132" height="151" /></a>
+                <a href="double.html"><img id="double" src="imageAssets/double.png" width="107" height="151" /></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
